@@ -21,9 +21,9 @@
 <meta property="article:author" content="ChenYu">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1677073683624">
+    <link rel="stylesheet" href="/css/style.css?v=1677162777253">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1677073683624">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1677162777253">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -47,7 +47,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>Articles</span>4</div>
+        <div><span>Articles</span>5</div>
         <div><span>Tags</span>7</div>
         <div><span>Categories</span>2</div>
     </div>
@@ -112,7 +112,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/杂谈/">杂谈</a>
-          <span class="category-list-count">3</span>
+          <span class="category-list-count">4</span>
         </li>
 
         
@@ -133,7 +133,7 @@
     
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/CMake/" style="font-size: 10px;">CMake</a> <a href="/tags/CUDA/" style="font-size: 10px;">CUDA</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 10px;">工作</a> <a href="/tags/%E6%90%AC%E5%AE%B6/" style="font-size: 10px;">搬家</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E6%98%BE%E5%8D%A1/" style="font-size: 10px;">显卡</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">神经网络</a>
+      <a href="/tags/CMake/" style="font-size: 10px;">CMake</a> <a href="/tags/CUDA/" style="font-size: 15px;">CUDA</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 15px;">工作</a> <a href="/tags/%E6%90%AC%E5%AE%B6/" style="font-size: 10px;">搬家</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E6%98%BE%E5%8D%A1/" style="font-size: 10px;">显卡</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">神经网络</a>
     </div>
     
   </div>
@@ -153,6 +153,36 @@
             <section class="nexmoe-posts">
     
     <div class="nexmoe-post">
+        <a href="/2023/02/23/%E8%A2%ABCUBLAS%E6%8B%BF%E4%B8%8B%E7%9A%84%E5%8D%8A%E5%A4%A9/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
+                    <img data-src="https://od.lk/s/OTZfNzYwNjk1NDFf/wallpaperflare.com_wallpaper.jpg" data-sizes="auto" alt="被CUBLAS拿下的半天" class="lazyload">
+                    <h1>被CUBLAS拿下的半天</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年02月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>230 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>昨天提到使用cublasGemmEx的时候结果始终无法对齐。今天上午继续探索了以下，果然还是我太naive了，原来高贵的cublasGemmEx对于输入是看作列优先矩阵进行计算的，所以我的计算结果就全部木大了。顺便在下边分享一篇写的不错的博客，比较详细的介绍了正确的使用姿势。</p>
+<p>然后就是今晚下雨了，很不情愿地出门去健身了。健身结束回来的时候心情十分低落，又累又汗还得捂着不能冻着。路过全家的时候进去找了点吃的，发现全家的鸡肉串似乎卖相不错，就买了一串。真的好吃啊，不懂为啥，这种微波炉转一下端出来的速冻鸡肉能这么好吃。下次还来！</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cuancuancuanhao/p/7763256.html">有关CUBLAS中的矩阵乘法函数</a></li>
+</ul>
+</blockquote>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
         <a href="/2023/02/22/%E6%8D%A2%E4%BA%86%E6%96%B0%E6%98%BE%E5%8D%A1/">
             
                 <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
@@ -164,7 +194,7 @@
 
         <div class="nexmoe-post-meta nexmoe-rainbow">
             <a><i class="nexmoefont icon-calendar-fill"></i>2023年02月22日</a>
-            <a><i class="nexmoefont icon-areachart"></i>240 字</a>
+            <a><i class="nexmoefont icon-areachart"></i>238 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
         </div>
 
@@ -172,9 +202,14 @@
             
                 <p>昨天晚上收到了新买显卡，忙着玩游戏就没来得及更新了。买了一张二手的1660s，感觉还可以吧，至少没花屏，玩个大革命也能有60帧了。以及昨晚去健身发现体能好像提升了不少，但是肌肉似乎没怎么长，感觉还需要努力坚持。</p>
 <p>今天工作终于把手写的CUDA代码对齐了一些，昨天整整对了一天还是没有对齐，今天发现是WarpReduce相关的逻辑导致了在我设置的blockDim下无法正常工作。手动padding了一下就可以得到正确结果了，挺开心的。然而又被cublasGemmEx给搞住了，感觉shape和value都没啥问题啊。。也仔细阅读了<a target="_blank" rel="noopener" href="https://docs.nvidia.com/cuda/cublas/">手册</a>，然并卵，明天再努力了。</p>
-<p>贴几个今天看到的好文章:<br />
-1. <a target="_blank" rel="noopener" href="https://www.cvmart.net/community/detail/6021">CUDA 高性能计算经典问题：归约</a><br />
-2. <a target="_blank" rel="noopener" href="https://developer.nvidia.com/zh-cn/blog/using-cuda-warp-level-primitives/">使用 CUDA 扭曲级别基本体</a></p>
+<p>贴几个今天看到的好文章:</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cvmart.net/community/detail/6021">CUDA 高性能计算经典问题：归约</a><br />
+</li>
+<li><a target="_blank" rel="noopener" href="https://developer.nvidia.com/zh-cn/blog/using-cuda-warp-level-primitives/">使用 CUDA 扭曲级别基本体</a></li>
+</ul>
+</blockquote>
 
             
         </article>
@@ -296,7 +331,7 @@ $${H=X·W+b}$$ 紧接着，将<strong>隐藏层</strong>的结果通过<strong>�
 
  
 
-<script async src="/js/app.js?v=1677073683626"></script>
+<script async src="/js/app.js?v=1677162777254"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>

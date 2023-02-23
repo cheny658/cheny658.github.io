@@ -21,9 +21,9 @@
 <meta property="article:author" content="ChenYu">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1677073683652">
+    <link rel="stylesheet" href="/css/style.css?v=1677162777290">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1677073683652">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1677162777290">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -47,7 +47,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>Articles</span>4</div>
+        <div><span>Articles</span>5</div>
         <div><span>Tags</span>7</div>
         <div><span>Categories</span>2</div>
     </div>
@@ -112,7 +112,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/杂谈/">杂谈</a>
-          <span class="category-list-count">3</span>
+          <span class="category-list-count">4</span>
         </li>
 
         
@@ -133,7 +133,7 @@
     
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/CMake/" style="font-size: 10px;">CMake</a> <a href="/tags/CUDA/" style="font-size: 10px;">CUDA</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 10px;">工作</a> <a href="/tags/%E6%90%AC%E5%AE%B6/" style="font-size: 10px;">搬家</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E6%98%BE%E5%8D%A1/" style="font-size: 10px;">显卡</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">神经网络</a>
+      <a href="/tags/CMake/" style="font-size: 10px;">CMake</a> <a href="/tags/CUDA/" style="font-size: 15px;">CUDA</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 15px;">工作</a> <a href="/tags/%E6%90%AC%E5%AE%B6/" style="font-size: 10px;">搬家</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E6%98%BE%E5%8D%A1/" style="font-size: 10px;">显卡</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">神经网络</a>
     </div>
     
   </div>
@@ -151,6 +151,36 @@
     <div id="nexmoe-content">
         <div class="nexmoe-primary">
             <section class="nexmoe-posts">
+    
+    <div class="nexmoe-post">
+        <a href="/2023/02/23/%E8%A2%ABCUBLAS%E6%8B%BF%E4%B8%8B%E7%9A%84%E5%8D%8A%E5%A4%A9/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
+                    <img data-src="https://od.lk/s/OTZfNzYwNjk1NDFf/wallpaperflare.com_wallpaper.jpg" data-sizes="auto" alt="被CUBLAS拿下的半天" class="lazyload">
+                    <h1>被CUBLAS拿下的半天</h1>
+                </div>
+            
+        </a>
+
+        <div class="nexmoe-post-meta nexmoe-rainbow">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2023年02月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>230 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        </div>
+
+        <article>
+            
+                <p>昨天提到使用cublasGemmEx的时候结果始终无法对齐。今天上午继续探索了以下，果然还是我太naive了，原来高贵的cublasGemmEx对于输入是看作列优先矩阵进行计算的，所以我的计算结果就全部木大了。顺便在下边分享一篇写的不错的博客，比较详细的介绍了正确的使用姿势。</p>
+<p>然后就是今晚下雨了，很不情愿地出门去健身了。健身结束回来的时候心情十分低落，又累又汗还得捂着不能冻着。路过全家的时候进去找了点吃的，发现全家的鸡肉串似乎卖相不错，就买了一串。真的好吃啊，不懂为啥，这种微波炉转一下端出来的速冻鸡肉能这么好吃。下次还来！</p>
+<blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cuancuancuanhao/p/7763256.html">有关CUBLAS中的矩阵乘法函数</a></li>
+</ul>
+</blockquote>
+
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2023/02/20/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E6%9C%80%E8%BF%91%E7%9A%84%E6%83%B3%E6%B3%95/">
@@ -202,7 +232,7 @@
 
  
 
-<script async src="/js/app.js?v=1677073683654"></script>
+<script async src="/js/app.js?v=1677162777292"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
