@@ -4,9 +4,9 @@
 
 <head>
     
-    <title>神经网络初探 - Welcome to my page</title>
+    <title>神经网络初探 - ChenYu&#39;s blog</title>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="一般通过社畜">
     <meta name="keywords" content="null">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
     
@@ -17,7 +17,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="神经网络初探">
 <meta property="og:url" content="http://cheny658.github.io/2021/08/01/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%88%9D%E6%8E%A2/index.html">
-<meta property="og:site_name" content="Welcome to my page">
+<meta property="og:site_name" content="ChenYu&#39;s blog">
 <meta property="og:description" content="今天，稍微学习了一下神经网络的相关知识，在此做一下笔记。水一下概念，大家笑一笑就好。 1.前言 工作中经常会使用到算法组的同学提供的模型，然而模型的内部结构又是如何呢？ 经过一番请教，我们了解到模型本质上是一堆的神经网络在对输入做计算，那么具体是怎么个算法呢，我们接下来以一个分类问题为例（我目前也只了解分类问题QAQ） 2.正向传播 假如我们的输入的是一个二维的点坐标$P(3,9)$，我">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-08-01T10:05:55.000Z">
@@ -26,9 +26,9 @@
 <meta property="article:tag" content="神经网络">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1677162777235">
+    <link rel="stylesheet" href="/css/style.css?v=1680104252766">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1677162777235">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1680104252766">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -52,9 +52,9 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>Articles</span>5</div>
-        <div><span>Tags</span>7</div>
-        <div><span>Categories</span>2</div>
+        <div><span>Articles</span>7</div>
+        <div><span>Tags</span>13</div>
+        <div><span>Categories</span>3</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
@@ -117,13 +117,20 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/杂谈/">杂谈</a>
-          <span class="category-list-count">4</span>
+          <span class="category-list-count">5</span>
         </li>
 
         
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/深度学习/">深度学习</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
+          <a class="category-list-link" href="/categories/设计模式/">设计模式</a>
           <span class="category-list-count">1</span>
         </li>
 
@@ -138,7 +145,7 @@
     
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/CMake/" style="font-size: 10px;">CMake</a> <a href="/tags/CUDA/" style="font-size: 15px;">CUDA</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 15px;">工作</a> <a href="/tags/%E6%90%AC%E5%AE%B6/" style="font-size: 10px;">搬家</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E6%98%BE%E5%8D%A1/" style="font-size: 10px;">显卡</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">神经网络</a>
+      <a href="/tags/C/" style="font-size: 13.33px;">C++</a> <a href="/tags/CMake/" style="font-size: 10px;">CMake</a> <a href="/tags/CUDA/" style="font-size: 13.33px;">CUDA</a> <a href="/tags/%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;">学习</a> <a href="/tags/%E5%B7%A5%E4%BD%9C/" style="font-size: 16.67px;">工作</a> <a href="/tags/%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">工厂方法模式</a> <a href="/tags/%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">抽象工厂模式</a> <a href="/tags/%E6%90%AC%E5%AE%B6/" style="font-size: 10px;">搬家</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 20px;">日常</a> <a href="/tags/%E6%98%BE%E5%8D%A1/" style="font-size: 10px;">显卡</a> <a href="/tags/%E7%94%9F%E6%88%90%E5%99%A8%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">生成器模式</a> <a href="/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/" style="font-size: 10px;">神经网络</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">设计模式</a>
     </div>
     
   </div>
@@ -252,7 +259,7 @@ $${H=X·W+b}$$ 紧接着，将<strong>隐藏层</strong>的结果通过<strong>�
 
  
 
-<script async src="/js/app.js?v=1677162777238"></script>
+<script async src="/js/app.js?v=1680104252767"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
