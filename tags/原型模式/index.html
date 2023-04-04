@@ -4,7 +4,7 @@
 
 <head>
     
-    <title>Tags：设计模式 - ChenYu&#39;s blog</title>
+    <title>Tags：原型模式 - ChenYu&#39;s blog</title>
     <meta charset="UTF-8">
     <meta name="description" content="一般通过社畜">
     <meta name="keywords" content="null">
@@ -16,16 +16,16 @@
     <meta name="description" content="一般通过社畜">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ChenYu&#39;s blog">
-<meta property="og:url" content="http://cheny658.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:url" content="http://cheny658.github.io/tags/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="ChenYu&#39;s blog">
 <meta property="og:description" content="一般通过社畜">
 <meta property="og:locale">
 <meta property="article:author" content="ChenYu">
 <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css,gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css,npm/hexo-theme-nexmoe@latest/source/lib/mdui_043tiny/css/mdui.css,npm/hexo-theme-nexmoe@latest/source/lib/iconfont/iconfont.css?v=233" crossorigin>
-    <link rel="stylesheet" href="/css/style.css?v=1680576976676">
+    <link rel="stylesheet" href="/css/style.css?v=1680576976688">
     
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1680576976676">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1680576976688">
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 <body class="mdui-drawer-body-left">
@@ -186,33 +186,6 @@
         </article>
     </div>
     
-    <div class="nexmoe-post">
-        <a href="/2023/03/29/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F1/">
-            
-                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: NaN%;"> 
-                    <img data-src="https://od.lk/s/OTZfNzc2MTQzMDdf/Omoide%20Kakera%20BG.jpg" data-sizes="auto" alt="『阅读笔记』设计模式1" class="lazyload">
-                    <h1>『阅读笔记』设计模式1</h1>
-                </div>
-            
-        </a>
-
-        <div class="nexmoe-post-meta nexmoe-rainbow">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2023年03月29日</a>
-            <a><i class="nexmoefont icon-areachart"></i>485 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
-        </div>
-
-        <article>
-            
-                <h1 id="工厂方法模式"><a href="#工厂方法模式" class="headerlink" title="工厂方法模式"></a>工厂方法模式</h1><p>讲道理就是最简单的纯虚函数继承模式，一个提供纯虚函数接口（假设叫process()）的类做Base Class，然后需要用到的类分别实现这个接口后，用一个工厂调BaseClass的这个方法就完事了<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Base</span> &#123;</span><br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-built_in">Base</span>() = <span class="hljs-keyword">default</span>;<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;<br>&#125;;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Derived1</span> :</span> <span class="hljs-keyword">public</span> Base &#123;<br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">override</span> </span>&#123;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Here is Derived1 process logic&quot;</span> &lt;&lt; std::endl;<br>  &#125;;<br>&#125;;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Derived2</span> :</span> <span class="hljs-keyword">public</span> Base &#123;<br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">override</span> </span>&#123;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Here is Derived2 process logic&quot;</span> &lt;&lt; std::endl;<br>  &#125;;<br>&#125;;<br><br><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">call_derived</span><span class="hljs-params">(Base* ptr)</span> </span>&#123;<br>  ptr-&gt;<span class="hljs-built_in">process</span>();<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>  Derived1 d1;<br>  Derived2 d2;<br>  <span class="hljs-built_in">call_derived</span>(&amp;d1);<br>  <span class="hljs-built_in">call_derived</span>(&amp;d2);<br>  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br></code></pre></td></tr></table></figure></p>
-<h1 id="抽象工厂模式"><a href="#抽象工厂模式" class="headerlink" title="抽象工厂模式"></a>抽象工厂模式</h1><p>总结就是用一个factory接口类包含要用到的接口类，这样就可以保证一次定制多个想用的类到一个特定的factory派生类里<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Base1</span> &#123;</span><br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-built_in">Base1</span>() = <span class="hljs-keyword">default</span>;<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Base2</span> &#123;</span><br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-built_in">Base2</span>() = <span class="hljs-keyword">default</span>;<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Factory</span> &#123;</span><br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-function">Base1* <span class="hljs-title">createBase1</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;<br>  <span class="hljs-function">Base2* <span class="hljs-title">createBase2</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;<br>&#125;<br><br></code></pre></td></tr></table></figure></p>
-<h1 id="生成器模式"><a href="#生成器模式" class="headerlink" title="生成器模式"></a>生成器模式</h1><p>利用一个生成器类配置需要用到的类工具，数量和类型都可以定制<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Base</span> &#123;</span><br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-built_in">Base</span>() = <span class="hljs-keyword">default</span>;<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Derived1</span> :</span> <span class="hljs-keyword">public</span> Base &#123;<br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">override</span> </span>&#123;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Here is Derived1 process logic&quot;</span> &lt;&lt; std::endl;<br>  &#125;;<br>&#125;;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Derived2</span> :</span> <span class="hljs-keyword">public</span> Base &#123;<br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">process</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> <span class="hljs-keyword">override</span> </span>&#123;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Here is Derived2 process logic&quot;</span> &lt;&lt; std::endl;<br>  &#125;;<br>&#125;;<br><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Generator</span> &#123;</span><br><span class="hljs-keyword">public</span>:<br>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">const</span> std::string &amp;key, std::shared_ptr&lt;Base&gt; &amp;val)</span> </span>&#123;<br>    content_.<span class="hljs-built_in">emplace</span>(key, val);<br>  &#125;;<br><br><span class="hljs-keyword">private</span>:<br>  std::map&lt;std::string, std::shared_ptr&lt;Base&gt;&gt; content_;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>  <span class="hljs-keyword">auto</span> d1 = std::make_shared&lt;Derived1&gt;();<br>  <span class="hljs-keyword">auto</span> d2 = std::make_shared&lt;Derived2&gt;();<br>  Generator g1;<br>  g1.<span class="hljs-built_in">add</span>(<span class="hljs-string">&quot;k1&quot;</span>, d1);<br><br>  Generator g2;<br>  g2.<span class="hljs-built_in">add</span>(<span class="hljs-string">&quot;k2&quot;</span>, d2);<br><br>  Generator g3;<br>  g3.<span class="hljs-built_in">add</span>(<span class="hljs-string">&quot;k1&quot;</span>, d1);<br>  g3.<span class="hljs-built_in">add</span>(<span class="hljs-string">&quot;k2&quot;</span>, d2);<br>&#125;<br><br></code></pre></td></tr></table></figure></p>
-<p>感觉总结的不一定对，但八九不离十吧，这两天还真用到了生成器模式（应该是吧），以后多留意留意。</p>
-
-            
-        </article>
-    </div>
-    
 </section>
 
             <div class="nexmoe-post-right">
@@ -233,7 +206,7 @@
 
  
 
-<script async src="/js/app.js?v=1680576976677"></script>
+<script async src="/js/app.js?v=1680576976690"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
 <script>
